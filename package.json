@@ -2,7 +2,7 @@
   "name": "language-bgscript",
   "version": "0.0.1",
   "description": "Syntax highlighting for BGScript",
-  "repository": "https://git.gwillz.com.au/mk2/bgscript-language.git",
+  "repository": "https://git.gwillz.com.au/mk2/language-bgscript.git",
   "engines": {
       "atom": "*"
   }
