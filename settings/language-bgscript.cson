@@ -1,5 +1,5 @@
 '.source.bgscript':
   'editor':
     'commentStart': '# '
-    'increaseIndentPattern': '^\\s*((event|prodecure)\\w+|.+then)\\b.*:\\s*$'
-    'decreaseIndentPattern': '^\\s*(end\\w*|else)\\b.*:'
+    'increaseIndentPattern': '^\\s*((event|prodecure|export).+\\(.*\\)|.+then\\b|else\\b)$'
+    'decreaseIndentPattern': '^\\s*(end\\w*|else\\b)$'
