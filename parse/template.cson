@@ -1,0 +1,45 @@
+scopeName: 'source.bgscript'
+name: 'BGScript'
+fileTypes: ['BGS']
+patterns: [
+    {{
+        begin: '#'
+        end:   '\\n'
+        name:  'comment.line.bgscript'
+    }}
+    {{
+        begin: '\\"'
+        end: '\\"'
+        name: 'string.bgscript'
+    }}
+    {{
+        comment: 'number highlighting, including hex types'
+        match: '\\b(?i:(\\$?[a-f0-9]+|[\\d\\.]+))\\b'
+        name:  'constant.numeric.bgscript'
+    }}
+    {{
+        comment: 'operators'
+        match: ',|<|>|"|&|/|\\$(?!\\d)|\\=|\\!|\\:|\\-|\\(|\\)|\\*|\\^|\\||\\+|\\\\'
+        name:  'keyword.operator.bgscript'
+    }}
+    {{
+        comment: 'control keywords'
+        match: '(?i:\\b(event|end|if|else|then|call|while|dim|let|procedure|const|export|import|sfloat|float|memcpy|memcmp|memset|return)\\b)'
+        name:  'keyword.control.bgscript'
+    }}
+    {{
+        comment: 'inbuilt/system functions'
+        match: '(?i:\\b({commands})\\b)'
+        name:  'entity.name.function.bgscript'
+    }}
+    {{
+        comment: 'in-built events'
+        match: '(?i:\\b({events})\\b)'
+        name: 'constant.other.symbol.bgscript'
+    }}
+    {{
+        comment: 'in-built enumerations'
+        match: '(?i:\\b({enums})\\b)'
+        name: 'entity.name.tag.bgscript'
+    }}
+]
