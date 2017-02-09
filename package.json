@@ -1,7 +1,7 @@
 {
   "name": "language-bgscript",
-  "version": "0.1.2",
-  "description": "Syntax highlighting for BGScript",
+  "version": "0.4.0",
+  "description": "Syntax highlighting for BGScript by SiliconLabs/BlueGiga",
   "repository": "https://github.com/gwillz/language-bgscript.git",
   "engines": {
     "atom": "*"
