@@ -1,16 +1,25 @@
 language-bgscript
 =================
-Version: 0.1.2
+Version: 0.4
 
 Syntax highlighting for BGScript by [Bluegiga](https://www.bluegiga.com/en-US/).
 
-Based on the Notepad++ highlighter provided in the
-[BLE SDK](https://www.bluegiga.com/en-US/products/software-bluegiga-bluetooth-smart/#documentation).
+Based on the Notepad++ highlighter provided by SiliconLabs and the `gecko.xml`
+included in the BLE SDK.
 
-Some extra keywords were harvested from the BlueGecko BGAPI docs.
+Usage
+-----
+This package obviously includes a complete grammar, but also contains a parser
+written in Python to scrape keywords from the Notepad++ highlighter and the
+`gecko.xml`.
+
+```sh
+cd parse/
+python3 scrape.py gecko.xml userDefineLang_BGScript.xml > ../grammars/bgscript.cson
+```
 
 Contributors
 ------------
 + [Gwilyn Saunders](https://git.gwillz.com.au/u/gwillz)
 
-BGScript and associated trademarks belong to Bluegiga/Silicon Labs.
+BGScript and associated trademarks belong to Bluegiga/SiliconLabs.
