@@ -1,6 +1,6 @@
 language-bgscript
 =================
-Version: 0.4
+Version: 0.5.0
 
 Syntax highlighting for BGScript by [Bluegiga](https://www.bluegiga.com/en-US/).
 
