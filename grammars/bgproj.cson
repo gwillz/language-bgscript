@@ -1,0 +1,4 @@
+scopeName: 'source.bgproj'
+name: 'BGProject'
+fileTypes: ['BGPROJ']
+patterns: [include: 'text.xml']

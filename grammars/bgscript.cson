@@ -14,7 +14,7 @@ patterns: [
     }
     {
         comment: 'number highlighting, including hex types'
-        match: '\\b(?i:(\\$?[a-f0-9]+|[\\d\\.]+))\\b'
+        match: '[\\b\\s](?i:(\\$[a-f0-9[^.]]+|[\\d\\.]+))\\b'
         name:  'constant.numeric.bgscript'
     }
     {
@@ -43,4 +43,3 @@ patterns: [
         name: 'entity.name.tag.bgscript'
     }
 ]
-
